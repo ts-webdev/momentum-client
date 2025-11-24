@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="min-h-[70vh]">
+    <section className="min-h-[70vh] max-w-7xl mx-auto px-5">
       <div className="flex justify-around   pt-7 items-center">
         <div className=" w-2/3 relative">
           <h1 className="text-6xl w-1/2 font-black text-primary">
@@ -16,7 +16,7 @@ export default function Banner() {
             unparalleled grace, leaving you free to immerse yourselves in the
             magic of your most important day.
           </p>
-          <div className="absolute top-0 right-10  ">
+          <div className="absolute top-0 right-40 animate-[spin_15s_linear_infinite]  ">
             <Image src="/tag.png" height={0} width={102} alt="tag"/>
           </div>
         </div>
