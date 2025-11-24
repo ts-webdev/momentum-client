@@ -20,7 +20,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <div className="max-w-7xl mx-auto px-5 navbar">
+    <div className="max-w-7xl mx-auto px-5 navbar sticky z-100 top-3 bg-white/90 mt-7 shadow-sm rounded-full">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,8 +68,8 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline btn-primary">Login</a>
-        <a className="btn btn-primary text-white ml-2">Register</a>
+        <a className="btn btn-outline btn-primary rounded-full">Login</a>
+        <a className="btn btn-primary text-white ml-2 rounded-full">Register</a>
       </div>
     </div>
   );
