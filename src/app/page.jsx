@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Banner from "@/components/Banner";
 import EventOrganizer from "@/components/EventOrganizer";
 import LatestNews from "@/components/LatestNews";
@@ -11,6 +12,7 @@ export default function Home() {
       <WhatWeOffer/>
       <EventOrganizer/>
       <LatestNews/>
+      <About/>
     </main>
   );
 }
