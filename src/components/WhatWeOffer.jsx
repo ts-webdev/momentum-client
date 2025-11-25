@@ -10,10 +10,16 @@ export default function WhatWeOffer() {
         Our Wedding Event Management Services Include
       </h1>
       <div className="mt-10">
-        <Marquee className="py-3" pauseOnHover={true}>
-          <EventCard />
-          <EventCard />
-          <EventCard />
+        <Marquee className="py-3 grid grid-cols-3 gap-10" pauseOnHover={true}>
+          <div>
+            <EventCard />
+          </div>
+          <div>
+            <EventCard />
+          </div>
+          <div>
+            <EventCard />
+          </div>
         </Marquee>
       </div>
       <div className="flex justify-center">

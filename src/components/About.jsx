@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
@@ -7,17 +8,17 @@ export default function About() {
             <h1 className="text-4xl text-center font-bold w-1/2 mx-auto mt-4">
                 Our Commitment to Flawless Execution
             </h1>
-            <div className='flex justify-between items-center gap-20 mt-10'>
+            <div className='flex justify-around items-center mt-10'>
                 {/* left side text*/}
                 <div className='w-1/2 flex items-start flex-col gap-5'>
                     
                     <h1 className='text-3xl w-5/6 font-bold'>Our Commitment to Flawless Execution</h1>
                     <p className='w-5/6 '>At Momentum, we believe that every gathering—from corporate conferences to intimate weddings—is an opportunity to create something truly exceptional. We are more than just event managers; we are the architects of atmosphere and the curators of connection</p>
-                    <button className='btn btn-primary text-white rounded-full'>Learn More</button>
+                    <button className='btn btn-primary text-white rounded-full'>Contact</button>
                 </div>
                 {/* right side cards */}
-                <div className='grid grid-cols-2 gap-5 w-1/2'>
-                    
+                <div>
+                    <Image src="/organizers/newEvent.png" alt='about photo' width={400} height={100}/>
                 </div>
             </div>
         </div>

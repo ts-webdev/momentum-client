@@ -3,7 +3,7 @@ import React from "react";
 
 export default function EventCard() {
   return (
-    <div className="card bg-base-100 w-96 mx-10 shadow-sm">
+    <div className="card bg-base-100 w-96 mx-10 shadow-sm hover:scale-105 transform transition-all duration-300">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
