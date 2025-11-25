@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import ActiveLink from "./ActiveLink";
+import Link from "next/link";
 
 export default function Navbar() {
-  const user = true;
+  const user = false;
   const links = (
     <>
       <li>
@@ -99,7 +100,7 @@ export default function Navbar() {
         </div>
       ) : (
         <div className="navbar-end">
-          <a className="btn btn-outline btn-primary rounded-full">Login</a>
+          <Link href="/api/login" className="btn btn-outline btn-primary rounded-full">Login</Link>
           <a className="btn btn-primary text-white ml-2 rounded-full">
             Register
           </a>
