@@ -1,6 +1,7 @@
 import React from "react";
 import EventCard from "./EventCard";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 export default function WhatWeOffer() {
   return (
@@ -23,7 +24,7 @@ export default function WhatWeOffer() {
         </Marquee>
       </div>
       <div className="flex justify-center">
-        <button className="mt-10 btn btn-primary rounded-full text-white">Show All Services</button>
+        <Link href="/all-events" className="mt-10 btn btn-primary rounded-full text-white">Show All Events</Link>
       </div>
     </div>
   );

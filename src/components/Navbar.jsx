@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import ActiveLink from "./ActiveLink";
 
 export default function Navbar() {
   const user = true;
   const links = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <ActiveLink href="/">Home</ActiveLink>
       </li>
       <li>
-        <Link href="/all-events">All Events</Link>
+        <ActiveLink href="/all-events">All Events</ActiveLink>
       </li>
       <li>
-        <Link href="/blog">Blog</Link>
+        <ActiveLink href="/blog">Blog</ActiveLink>
       </li>
       <li>
-        <Link href="/contact">Contact</Link>
+        <ActiveLink href="/contact">Contact</ActiveLink>
       </li>
     </>
   );
