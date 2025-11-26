@@ -13,7 +13,7 @@ export default async function ContactPage() {
       {/* <Navbar session={session} /> */}
       
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+      <section className="bg-linear-to-r from-blue-600 to-purple-700 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Get In Touch</h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">
@@ -172,7 +172,7 @@ export default async function ContactPage() {
           </div>
           
           {/* Map Placeholder */}
-          <div className="bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl h-96 flex items-center justify-center">
+          <div className="bg-linear-to-br from-blue-400 to-purple-500 rounded-2xl h-96 flex items-center justify-center">
             <div className="text-center text-white">
               <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

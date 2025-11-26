@@ -1,10 +1,12 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import ActiveLink from "./ActiveLink";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 
 export default function Navbar() {
-  const user = false;
+  const { data: session, status } = useSession();
   const links = (
     <>
       <li>
@@ -14,7 +16,7 @@ export default function Navbar() {
         <ActiveLink href="/all-events">All Events</ActiveLink>
       </li>
       <li>
-        <ActiveLink href="/blog">Blog</ActiveLink>
+        <ActiveLink href="/blogs">Blogs</ActiveLink>
       </li>
       <li>
         <ActiveLink href="/contact">Contact</ActiveLink>
@@ -63,7 +65,7 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      {user ? (
+      {session ? (
         <div className="navbar-end">
           
           <div className="dropdown dropdown-end">
@@ -72,10 +74,12 @@ export default function Navbar() {
               role="button"
               className="btn btn-ghost btn-circle avatar"
             >
-              <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              <div className="w-10 rounded-full border" title={session.user.name}>
+                <Image
+                  alt="User Photo"
+                  src={session?.user?.image}
+                  width={200}
+                  height={100}
                 />
               </div>
             </div>
@@ -84,15 +88,14 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
+                <Link href="/add-event" className="justify-between">
+                  Add Event
+                </Link>
               </li>
               <li>
-                <a>Settings</a>
+                <Link href='/manage'>Manage Events </Link>
               </li>
-              <li>
+              <li onClick={()=>signOut()}>
                 <a>Logout</a>
               </li>
             </ul>
@@ -101,9 +104,9 @@ export default function Navbar() {
       ) : (
         <div className="navbar-end">
           <Link href="/login" className="btn btn-outline btn-primary rounded-full">Login</Link>
-          <a className="btn btn-primary text-white ml-2 rounded-full">
+          <Link href="/register" className="btn btn-primary text-white ml-2 rounded-full">
             Register
-          </a>
+          </Link>
         </div>
       )}
     </div>

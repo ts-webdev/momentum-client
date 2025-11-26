@@ -7,7 +7,7 @@ export default function EventCard2({ event }) {
   return (
     <div className="relative card bg-base-100 shadow-sm hover:scale-105 transform transition-all duration-300">
       <figure>
-        <Image src={event.imageURL} alt="Shoes" width={500} height={0} />
+        <img src={event?.imageURL} alt="Shoes" width={500} height={0} />
       </figure>
       
       <div className="card-body">

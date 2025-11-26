@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React from 'react';
 
 export default async function LatestNews() {
@@ -25,7 +26,7 @@ export default async function LatestNews() {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
                 {blogPosts.map((post) => (
                     <div 
-                        key={post.id}
+                        key={post._id}
                         className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                     >
                         {/* Image Container */}
@@ -42,7 +43,7 @@ export default async function LatestNews() {
                                 </span>
                             </div>
                             {/* Overlay Gradient */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>
 
                         {/* Content */}
@@ -74,7 +75,7 @@ export default async function LatestNews() {
 
                             {/* Author */}
                             <div className="flex items-center space-x-3 mb-4">
-                                <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                                <div className="w-8 h-8 bg-linear-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                                     {post.author.split(' ').map(n => n[0]).join('')}
                                 </div>
                                 <span className="text-sm text-gray-700 font-medium">{post.author}</span>
@@ -93,7 +94,7 @@ export default async function LatestNews() {
                             </div>
 
                             {/* Read More Button */}
-                            <button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 group/btn">
+                            <button className="w-full bg-linear-to-r from-pink-500 to-purple-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 group/btn">
                                 <span>Read Article</span>
                                 <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -106,9 +107,9 @@ export default async function LatestNews() {
 
             {/* View All Button */}
             <div className="text-center mt-12">
-                <button className="bg-white border-2 border-pink-500 text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:scale-105">
-                    View All Articles
-                </button>
+                <Link href="/blogs" className="btn btn-primary rounded-full text-white">
+                    View All Blogs
+                </Link>
             </div>
 
             {/* Stats Section */}

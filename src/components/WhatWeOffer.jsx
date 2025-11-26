@@ -7,7 +7,6 @@ import EventCard2 from "./EventCard2";
 export default async function WhatWeOffer() {
   const res = await fetch("http://localhost:3000/events/latest")
   const events = await res.json()
-  console.log(events)
   return (
     <div className="my-48 max-w-7xl mx-auto px-5">
       <h2 className="text-secondary text-2xl text-center font-semibold">What We Offer</h2>
