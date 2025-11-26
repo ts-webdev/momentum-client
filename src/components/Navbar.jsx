@@ -100,7 +100,7 @@ export default function Navbar() {
         </div>
       ) : (
         <div className="navbar-end">
-          <Link href="/api/login" className="btn btn-outline btn-primary rounded-full">Login</Link>
+          <Link href="/login" className="btn btn-outline btn-primary rounded-full">Login</Link>
           <a className="btn btn-primary text-white ml-2 rounded-full">
             Register
           </a>

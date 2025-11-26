@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { signIn } from "next-auth/react"
 
 export default function LoginPage() {
   return (
@@ -27,7 +27,7 @@ export default function LoginPage() {
             />
           </div>
 
-          <button className="btn btn-primary w-full mt-4">Login</button>
+          <button onClick={()=>signIn()} className="btn btn-primary w-full mt-4">Login</button>
         </form>
         <div className="flex justify-between items-center gap-2 my-3">
             <div className="border h-0 w-1/2 border-gray-300"></div>

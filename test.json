@@ -1,0 +1,102 @@
+[
+  {
+    "title": "The Royal Garden Wedding",
+    "shortDescription": "A luxurious and enchanting garden ceremony with classic white and gold decor.",
+    "fullDescription": "Experience a fairy-tale wedding set amidst lush greenery and vintage fountains. This package includes full-service planning, gourmet catering, live string quartet, and a custom floral arch. Perfect for a grand celebration of 300+ guests.",
+    "price": 120000,
+    "date": "2026-06-15",
+    "priority": "High",
+    "imageURL": "https://i.ibb.co.com/V03Yp1y4/1.png",
+    "category": "Luxury"
+  },
+  {
+    "title": "Rustic Barn Ceremony",
+    "shortDescription": "Charming, cozy, and natural celebration in a beautifully restored wooden barn.",
+    "fullDescription": "A truly intimate affair featuring rustic wooden details, twinkling fairy lights, farm-to-table cuisine, and a cozy bonfire reception. Ideal for couples seeking a relaxed and authentic atmosphere for up to 150 guests.",
+    "price": 45000,
+    "date": "2026-09-22",
+    "priority": "Medium",
+    "imageURL": "https://i.ibb.co.com/qYCr7pH6/2.png",
+    "category": "Rustic"
+  },
+  {
+    "title": "Elegant Rooftop Reception",
+    "shortDescription": "A sophisticated evening event with stunning city skyline views and modern minimalist design.",
+    "fullDescription": "Celebrate under the stars with breathtaking panoramic city views. This package includes a contemporary setup, a signature cocktail bar, DJ services, and premium seating. Best suited for smaller, stylish evening parties of 80-120 guests.",
+    "price": 68000,
+    "date": "2027-01-10",
+    "priority": "High",
+    "imageURL": "https://i.ibb.co.com/b59mPtMs/3.png",
+    "category": "Modern"
+  },
+  {
+    "title": "Beachfront Destination Vows",
+    "shortDescription": "Say 'I Do' on soft sands with the ocean breeze and a sunset backdrop.",
+    "fullDescription": "An exotic and tranquil destination wedding package. Includes permit handling, a beautifully draped canopy, seashell-inspired décor, and a seafood grill reception. Perfect for adventurous couples and intimate gatherings.",
+    "price": 55000,
+    "date": "2026-03-01",
+    "priority": "Medium",
+    "imageURL": "https://i.ibb.co.com/BV2VnfPq/4.png",
+    "category": "Destination"
+  },
+  {
+    "title": "Intimate Micro Wedding",
+    "shortDescription": "A beautiful, budget-friendly ceremony focusing on close family and friends.",
+    "fullDescription": "Proving that less is more, this micro wedding package focuses entirely on quality over quantity. Includes a dedicated photographer, bespoke floral arrangements, and a five-course dinner for a maximum of 50 guests.",
+    "price": 18000,
+    "date": "2026-11-05",
+    "priority": "Low",
+    "imageURL": "https://i.ibb.co.com/yFd6BNjq/5.png",
+    "category": "Budget"
+  },
+  {
+    "title": "Cultural Fusion Celebration",
+    "shortDescription": "A vibrantly planned event blending two distinct cultures and traditions.",
+    "fullDescription": "We expertly manage the complexities of a multi-day, multi-cultural celebration. Includes specialized vendor sourcing, custom decor for both ceremonies, and coordination of complex ritual timings. A beautiful way to honor both families.",
+    "price": 95000,
+    "date": "2027-02-14",
+    "priority": "High",
+    "imageURL": "https://i.ibb.co.com/nGbFNcf/6.png",
+    "category": "Cultural"
+  },
+  {
+    "title": "Vintage Ballroom Gala",
+    "shortDescription": "Timeless elegance with crystal chandeliers, marble floors, and classic decor.",
+    "fullDescription": "A classic Hollywood romance brought to life in a grand, historic ballroom. Features a live big band, black-tie dress code, dramatic lighting, and champagne toast service. A truly formal and elegant affair for all ages.",
+    "price": 150000,
+    "date": "2026-12-31",
+    "priority": "High",
+    "imageURL": "https://i.ibb.co.com/gG78fWG/7.png",
+    "category": "Classic"
+  },
+  {
+    "title": "Simple Civil Ceremony & Brunch",
+    "shortDescription": "A simple and sweet courthouse ceremony followed by an intimate celebratory brunch.",
+    "fullDescription": "The perfect solution for couples who value simplicity and efficiency. This includes legal paperwork assistance, professional photos near the courthouse, and a reserved private room for an upscale brunch.",
+    "price": 10000,
+    "date": "2026-07-07",
+    "priority": "Low",
+    "imageURL": "https://i.ibb.co.com/qMp6Km5J/8.png",
+    "category": "Budget"
+  },
+  {
+    "title": "Mountain Retreat Elopement",
+    "shortDescription": "An adventurous, private ceremony with dramatic natural views.",
+    "fullDescription": "For the couple seeking adventure. We organize logistics for remote, stunning mountain locations. Package includes specialized officiant, adventure photographer, and a celebratory picnic basket. Extremely intimate (under 10 guests).",
+    "price": 30000,
+    "date": "2027-04-01",
+    "priority": "Medium",
+    "imageURL": "https://i.ibb.co.com/tMGQQwb3/9.png",
+    "category": "Adventure"
+  },
+  {
+    "title": "Winter Wonderland Wedding",
+    "shortDescription": "A magical, festive wedding complete with snowy landscapes and cozy indoor charm.",
+    "fullDescription": "Transform your venue into a warm, sparkling haven. Features include faux snow décor, hot cocoa stations, velvet seating, and a fireplace setting. A beautiful way to celebrate during the colder months.",
+    "price": 75000,
+    "date": "2026-12-20",
+    "priority": "High",
+    "imageURL": "https://i.ibb.co.com/V8f6gzQ/10.png",
+    "category": "Seasonal"
+  }
+]

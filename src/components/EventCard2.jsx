@@ -7,11 +7,9 @@ export default function EventCard2({ event }) {
   return (
     <div className="relative card bg-base-100 shadow-sm hover:scale-105 transform transition-all duration-300">
       <figure>
-        <Image src={event.imageURL} alt="Shoes" width={400} height={0} />
+        <Image src={event.imageURL} alt="Shoes" width={500} height={0} />
       </figure>
-      <span className="absolute top-53 right-3 text-white  bg-[#9381ff] py-1 px-3 rounded-full">
-        {event.category}
-      </span>
+      
       <div className="card-body">
         <h2 className="card-title text-primary">{event.title}</h2>
         <p>{event.shortDescription}..</p>

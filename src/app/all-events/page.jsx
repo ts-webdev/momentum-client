@@ -44,7 +44,7 @@ export default async function allEvents() {
       </div>
 
       {/* all Cards */}
-      <div className="grid grid-cols-3 gap-10 my-10">
+      <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-10 my-10">
        {
         events.map(event=> <EventCard2 key={event._id} event={event}/>)
        }

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { IoArrowBack } from "react-icons/io5";
+
 import { MdArrowForwardIos } from "react-icons/md";
 
 export default async function ViewDetails({ params }) {
@@ -54,6 +56,10 @@ export default async function ViewDetails({ params }) {
             </div>
           </div>
         </div>
+      <div className="flex justify-center mt-10">
+        <Link href="/all-events" className="btn btn-info text-white "> <IoArrowBack className="mt-1" size={20} />
+ Back to All Events</Link>
+      </div>
       </div>
     </div>
   );

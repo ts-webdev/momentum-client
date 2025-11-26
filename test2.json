@@ -1,0 +1,52 @@
+[
+    {
+        "title": "10 Unique Wedding Theme Ideas for 2024",
+        "excerpt": "Discover the most trending wedding themes that will make your special day unforgettable and personalized.",
+        "image": "https://i.ibb.co.com/V03Yp1y4/1.png",
+        "date": "Dec 15, 2024",
+        "category": "Wedding Themes",
+        "readTime": "5 min read",
+        "author": "Sarah Johnson",
+        "tags": ["Theme", "Inspiration", "Trending"]
+    },
+    {
+        "title": "Budget-Friendly Wedding Planning Tips",
+        "excerpt": "Learn how to create your dream wedding without breaking the bank with these practical budgeting strategies.",
+        "image": "https://i.ibb.co.com/qYCr7pH6/2.png",
+        "date": "Dec 12, 2024",
+        "category": "Planning Tips",
+        "readTime": "7 min read",
+        "author": "Mike Chen",
+        "tags": ["Budget", "Planning", "Tips"]
+    },
+    {
+        "title": "Seasonal Wedding Flowers Guide",
+        "excerpt": "Choose the perfect flowers for your wedding based on season, color palette, and personal style preferences.",
+        "image": "https://i.ibb.co.com/BV2VnfPq/4.png",
+        "date": "Dec 10, 2024",
+        "category": "Floral Design",
+        "readTime": "6 min read",
+        "author": "Emma Davis",
+        "tags": ["Flowers", "Seasonal", "Decor"]
+    },
+    {
+        "title": "Top 5 Wedding Venues with Stunning Ocean Views",
+        "excerpt": "Explore breathtaking beachfront venues that offer perfect sunset backdrops for your romantic ceremony.",
+        "image": "https://i.ibb.co.com/yFd6BNjq/5.png",
+        "date": "Dec 8, 2024",
+        "category": "Venue Selection",
+        "readTime": "8 min read",
+        "author": "David Wilson",
+        "tags": ["Venue", "Beach", "Location"]
+    },
+    {
+        "title": "Modern Wedding Photography Trends You'll Love",
+        "excerpt": "From drone shots to candid moments, discover the latest photography styles capturing love stories beautifully.",
+        "image": "https://i.ibb.co.com/nGbFNcf/6.png",
+        "date": "Dec 5, 2024",
+        "category": "Photography",
+        "readTime": "6 min read",
+        "author": "Lisa Rodriguez",
+        "tags": ["Photography", "Trends", "Memories"]
+    }
+]
