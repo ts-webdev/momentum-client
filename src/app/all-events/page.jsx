@@ -2,7 +2,7 @@ import EventCard2 from "@/components/EventCard2";
 import React from "react";
 
 export default async function allEvents() {
-  const res = await fetch("http://localhost:3000/events")
+  const res = await fetch("https://momentum-server-sigma.vercel.app/events")
   const events = await res.json()
   return (
     <div className="max-w-7xl mx-auto px-5 mt-10">

@@ -5,7 +5,7 @@ import Link from "next/link";
 import EventCard2 from "./EventCard2";
 
 export default async function WhatWeOffer() {
-  const res = await fetch("http://localhost:3000/events/latest")
+  const res = await fetch("https://momentum-server-sigma.vercel.app/events/latest")
   const events = await res.json()
   return (
     <div className="my-48 max-w-7xl mx-auto px-5">

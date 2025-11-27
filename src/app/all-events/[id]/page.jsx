@@ -9,7 +9,7 @@ export default async function ViewDetails({ params }) {
   const { id } = await params;
 
   // Fetch the event data
-  const res = await fetch(`http://localhost:3000/events/${id}`);
+  const res = await fetch(`https://momentum-server-sigma.vercel.app/events/${id}`);
   const event = await res.json();
   console.log(event);
 

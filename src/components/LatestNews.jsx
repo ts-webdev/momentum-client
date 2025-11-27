@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export default async function LatestNews() {
-    const res = await fetch("http://localhost:3000/blogs/latest")
+    const res = await fetch("https://momentum-server-sigma.vercel.app/blogs/latest")
     const blogPosts = await res.json()
    
 

@@ -16,7 +16,7 @@ const categories = [
 // const featuredPost = blogPosts[0]
 
 export default async function BlogPage() {
-  const res = await fetch("http://localhost:3000/blogs/");
+  const res = await fetch("https://momentum-server-sigma.vercel.app/blogs/");
   const blogPosts = await res.json();
 
   return (

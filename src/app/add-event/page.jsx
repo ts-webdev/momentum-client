@@ -25,7 +25,7 @@ export default function AddEvent() {
     };
 
     // post Event
-    fetch("http://localhost:3000/events", {
+    fetch("https://momentum-server-sigma.vercel.app/events", {
       method: "POST",
       headers: {
         "content-type": "application/json",
