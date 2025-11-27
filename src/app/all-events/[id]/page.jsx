@@ -9,7 +9,9 @@ export default async function ViewDetails({ params }) {
   const { id } = await params;
 
   // Fetch the event data
-  const res = await fetch(`https://momentum-server-sigma.vercel.app/events/${id}`);
+  const res = await fetch(
+    `https://momentum-server-sigma.vercel.app/events/${id}`
+  );
   const event = await res.json();
   console.log(event);
 
@@ -17,7 +19,9 @@ export default async function ViewDetails({ params }) {
     <div className="">
       {/* Title */}
       <div className="bg-linear-to-b from-[#BDE0FE] pt-40 pb-20 -mt-25">
-        <h1 className="text-4xl sm:text-5xl font-bold text-center">{event.title}</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-center">
+          {event.title}
+        </h1>
         <div className="flex justify-center items-center gap-3 mt-10">
           <Link href="/">Home</Link>
 
@@ -43,12 +47,16 @@ export default async function ViewDetails({ params }) {
           {/* details */}
           <div className="md:w-1/2">
             <div className="flex justify-between items-center bg-[#FFC8DD] p-5 rounded-md">
-                <p className="bg-white p-3 rounded-md font-bold flex items-center text-primary">Price: <FaBangladeshiTakaSign className="ml-2" /> {event.price}</p>
+              <p className="bg-white p-3 rounded-md font-bold flex items-center text-primary">
+                Price: <FaBangladeshiTakaSign className="ml-2" /> {event.price}
+              </p>
               <div>
                 <p className="font-semibold">Priority : {event.priority}</p>
               </div>
             </div>
-            <p className="pt-5 text-blue-500 font-semibold">Category : {event.category}</p>
+            <p className="pt-5 text-blue-500 font-semibold">
+              Category : {event.category}
+            </p>
             <h3 className="text-2xl font-semibold  mt-3">About this Event:</h3>
             <p>{event.fullDescription}</p>
             <div className="mt-5 flex justify-end">
@@ -56,13 +64,19 @@ export default async function ViewDetails({ params }) {
             </div>
           </div>
         </div>
-      <div className="flex items-center gap-7 justify-center mt-10">
-        <Link href="/all-events" className="btn btn-info text-white "> <IoArrowBack className="mt-1" size={20} />
- Back to All Events</Link>
- <span>or</span>
-        <Link href="/manage" className="btn btn-info text-white "> <IoArrowBack className="mt-1" size={20} />
- Back to Manage Page</Link>
-      </div>
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-7 justify-center mt-10">
+          <Link href="/all-events" className="btn btn-info text-white ">
+            {" "}
+            <IoArrowBack className="mt-1" size={20} />
+            Back to All Events
+          </Link>
+          <span>or</span>
+          <Link href="/manage" className="btn btn-info text-white ">
+            {" "}
+            <IoArrowBack className="mt-1" size={20} />
+            Back to Manage Page
+          </Link>
+        </div>
       </div>
     </div>
   );

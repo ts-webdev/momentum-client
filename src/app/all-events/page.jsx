@@ -6,7 +6,7 @@ export default async function allEvents() {
   const events = await res.json()
   return (
     <div className="max-w-7xl mx-auto px-5 mt-10">
-      <h1 className="text-4xl text-center font-bold w-1/2 mx-auto">
+      <h1 className="text-4xl text-center font-bold sm:w-1/2 mx-auto">
         Discover Your Next Unforgettable Event
       </h1>
       <p className="text-secondary mt-4 text-center font-semibold mb-20">

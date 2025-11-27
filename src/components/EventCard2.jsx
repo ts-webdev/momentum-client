@@ -15,8 +15,8 @@ export default function EventCard2({ event }) {
         <p>{event.shortDescription}..</p>
         <div className="flex items-center justify-between mt-5">
           <p className="text-xl font-semibold flex items-center">
-            Price: <FaBangladeshiTakaSign className="ml-2" />
-            {event.price}/-
+            <FaBangladeshiTakaSign className="ml-2" />
+            {event.price}
           </p>
           <Link
             href={`all-events/${event._id}`}
