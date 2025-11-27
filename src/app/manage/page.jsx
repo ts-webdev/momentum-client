@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 
 export default function ManageEvent() {
@@ -76,7 +77,7 @@ export default function ManageEvent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-linear-to-br from-[#BDE0FE] to-[#FFC8DD] py-8 px-4 flex items-center justify-center">
+      <div className="min-h-screen bg-linear-to-br from-[#BDE0FE] to-[#FFC8DD] -mt-25 pt-50 py-8 px-4 flex items-center justify-center">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-[#FFAFCC] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-700 text-lg">Loading events...</p>
@@ -86,7 +87,7 @@ export default function ManageEvent() {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-[#BDE0FE] to-[#FFC8DD] py-8 px-4">
+    <div className="min-h-screen bg-linear-to-b from-[#BDE0FE] -mt-25 pt-50 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
@@ -192,7 +193,8 @@ export default function ManageEvent() {
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex space-x-2">
-                        <button
+                        <Link
+                         href={`all-events/${event._id}`}
                           onClick={() => {/* Add view functionality */}}
                           className="bg-[#BDE0FE] text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#a8d4fc] transition-colors flex items-center"
                         >
@@ -201,7 +203,7 @@ export default function ManageEvent() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                           </svg>
                           View
-                        </button>
+                        </Link>
                         <button
                           onClick={() => handleDelete(event._id)}
                           disabled={deleteLoading === event._id}

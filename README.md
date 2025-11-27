@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌸 Momentum – Wedding Event Management Platform
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16.0.3-black?logo=next.js)](https://nextjs.org/) 
+[![React](https://img.shields.io/badge/React-19.2.0-blue?logo=react)](https://reactjs.org/)
+[![Node](https://img.shields.io/badge/Node.js-18.16.0-green?logo=node.js)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-9.0.0-brightgreen?logo=mongodb)](https://www.mongodb.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Momentum is a modern, full-stack **wedding event management platform** built with **Next.js**, **NextAuth.js**, **TailwindCSS**, and a **MongoDB + Express.js backend**.  
+It allows users to browse items, view details, manage products, and login via Google or credentials — all with a **clean, responsive UI**.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌟 Features
 
-## Learn More
+### Landing Page
+- Responsive **Navbar** with logo, routes, login/register  
+- **User dropdown** (after login): Add Product, Manage Products, Logout  
+- Hero section with headline, subtitle, CTA  
+- 4 themed sections: Features, items, testimonials, promotional banner  
+- Footer with links, social icons, copyright  
 
-To learn more about Next.js, take a look at the following resources:
+### Authentication
+- **Google OAuth** & **Email/Password login**  
+- Redirect to home (`/`) after login  
+- Middleware-protected routes (`/add-event`, `/manage`)  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Item List Page
+- Grid of cards (min 6) with image/icon, title, short description, price/meta, details button  
+- Search bar + optional category filter (UI only)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Item Details Page
+- Large image/banner  
+- Product title, full description, meta info (price/date/priority)  
+- Back button  
 
-## Deploy on Vercel
+### Protected Pages
+**Add Product:** Only accessible when logged in  
+- Form fields: title, short/long description, price/date/priority, optional image URL  
+- Submit with success toast  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Manage Products:**  
+- List all products in table/grid  
+- Actions: View, Delete  
+- Clean, readable, responsive layout  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎨 UI & Design Guidelines
+- Fully **responsive** for mobile, tablet, desktop  
+- Consistent **typography, spacing, colors**  
+- Uniform cards with **hover/focus states**  
+- Clean forms with validation & loading states  
+- Micro-interactions for buttons and elements  
+
+---
+
+## 🛠 Tech Stack
+**Frontend:** Next.js 16, React 19, TailwindCSS 4, DaisyUI, React Hot Toast, React Icons, React Fast Marquee  
+**Authentication:** NextAuth.js (Google + Credentials)  
+**Backend:** Express.js, MongoDB + Mongoose  
+**Tools:** ESLint, Middleware for protected routes  
+

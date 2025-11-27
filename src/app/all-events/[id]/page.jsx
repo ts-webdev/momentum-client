@@ -56,9 +56,12 @@ export default async function ViewDetails({ params }) {
             </div>
           </div>
         </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex items-center gap-7 justify-center mt-10">
         <Link href="/all-events" className="btn btn-info text-white "> <IoArrowBack className="mt-1" size={20} />
  Back to All Events</Link>
+ <span>or</span>
+        <Link href="/manage" className="btn btn-info text-white "> <IoArrowBack className="mt-1" size={20} />
+ Back to Manage Page</Link>
       </div>
       </div>
     </div>

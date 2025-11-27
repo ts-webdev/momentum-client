@@ -22,7 +22,7 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-linear-to-r from-blue-600 to-purple-700 text-white py-20">
+      <section className="bg-linear-to-r from-blue-600 to-purple-700 -mt-25 pt-50 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Blog</h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">

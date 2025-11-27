@@ -17,7 +17,7 @@ export default async function allEvents() {
         {/* Search */}
         <div className="w-2/3">
           <input
-            type="text"
+            type="search"
             placeholder="Search"
             className="input input-primary"
           />
@@ -26,17 +26,17 @@ export default async function allEvents() {
         <div>
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn m-1">
-              Click ⬇️
+              Sort by Price ⬇️
             </div>
             <ul
               tabIndex="-1"
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a>Item 1</a>
+                <a>High to Low</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a>Low to High</a>
               </li>
             </ul>
           </div>

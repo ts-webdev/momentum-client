@@ -55,7 +55,7 @@ export default function AddEvent() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-[#BDE0FE] to-[#FFC8DD] py-8 px-4">
+    <div className="min-h-screen bg-linear-to-b from-[#BDE0FE] -mt-25 pt-50  py-8 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
