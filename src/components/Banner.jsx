@@ -4,10 +4,11 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="min-h-[70vh] max-w-7xl mx-auto px-5">
-      <div className="flex justify-around flex-col-reverse lg:flex-row  pt-7 items-center">
+   <section className=" bg-linear-to-b from-primary/20 -mt-25 pt-25">
+     <div className="min-h-[70vh] max-w-7xl mx-auto px-5">
+      <div className="flex justify-around flex-col-reverse lg:flex-row  pt-15 items-center">
         <div className=" lg:w-2/3 relative">
-          <h1 className="lg:text-6xl text-5xl text-center lg:text-left lg:w-1/2 font-black text-primary">
+          <h1 className="lg:text-6xl text-4xl text-center lg:text-left lg:w-1/2 font-black text-primary">
             Creating Unforgettable Moments
           </h1>
           <p className="text-gray-500 text-center lg:text-left lg:w-2/3 mt-5">
@@ -29,6 +30,7 @@ export default function Banner() {
           />
         </div>
       </div>
-    </section>
+    </div>
+   </section>
   );
 }

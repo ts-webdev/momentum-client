@@ -1,3 +1,4 @@
+
 import About from "@/components/About";
 import Banner from "@/components/Banner";
 import EventOrganizer from "@/components/EventOrganizer";

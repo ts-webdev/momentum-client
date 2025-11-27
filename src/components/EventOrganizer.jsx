@@ -24,12 +24,16 @@ export default function EventOrganizer() {
                            <h3 className='text-2xl mt-3 font-bold'> Lucy Deans</h3>
                         </div>
                         <div className='bg-white shadow-sm flex  flex-col items-center p-5'>
-                            <Image src="/organizers/1.png" width={250} height={100} alt='organier photo'/>
-                           <h3 className='text-2xl mt-3 font-bold'> Lucy Deans</h3>
+                            <Image src="/organizers/2.png" width={250} height={100} alt='organier photo'/>
+                           <h3 className='text-2xl mt-3 font-bold'> Devit Den</h3>
                         </div>
                         <div className='bg-white shadow-sm flex  flex-col items-center p-5'>
-                            <Image src="/organizers/1.png" width={250} height={100} alt='organier photo'/>
-                           <h3 className='text-2xl mt-3 font-bold'> Lucy Deans</h3>
+                            <Image src="/organizers/3.png" width={250} height={100} alt='organier photo'/>
+                           <h3 className='text-2xl mt-3 font-bold'> Edward</h3>
+                        </div>
+                        <div className='bg-white shadow-sm flex  flex-col items-center p-5'>
+                            <Image src="/organizers/4.png" width={250} height={100} alt='organier photo'/>
+                           <h3 className='text-2xl mt-3 font-bold'> Anisa</h3>
                         </div>
                     </div>
                 </div>

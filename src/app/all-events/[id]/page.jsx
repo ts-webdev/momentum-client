@@ -17,7 +17,7 @@ export default async function ViewDetails({ params }) {
     <div className="">
       {/* Title */}
       <div className="bg-linear-to-b from-[#BDE0FE] pt-40 pb-20 -mt-25">
-        <h1 className="text-5xl font-bold text-center">{event.title}</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-center">{event.title}</h1>
         <div className="flex justify-center items-center gap-3 mt-10">
           <Link href="/">Home</Link>
 
@@ -29,9 +29,9 @@ export default async function ViewDetails({ params }) {
       </div>
       {/* Description */}
       <div className="max-w-7xl mx-auto px-5 my-10">
-        <div className="flex gap-7 justify-between items-center">
+        <div className="flex flex-col md:flex-row gap-7 justify-between items-center">
           {/* image */}
-          <div className="w-1/2 ">
+          <div className="md:w-1/2 ">
             <Image
               src={event.imageURL}
               alt={event.title}
@@ -41,7 +41,7 @@ export default async function ViewDetails({ params }) {
             />
           </div>
           {/* details */}
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <div className="flex justify-between items-center bg-[#FFC8DD] p-5 rounded-md">
                 <p className="bg-white p-3 rounded-md font-bold flex items-center text-primary">Price: <FaBangladeshiTakaSign className="ml-2" /> {event.price}</p>
               <div>

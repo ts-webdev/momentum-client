@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ActiveLink from "./ActiveLink";
 
 export default function Footer() {
   return (
@@ -17,8 +18,24 @@ export default function Footer() {
         </a>
         <p>
           Effortless event planning, executed perfectly. Your vision, realized.
-          
         </p>
+        <ul className="flex flex-col sm:flex-row my-2 items-center">
+          <li>
+            <ActiveLink href="/">Home</ActiveLink>
+          </li>
+          <li>
+            <ActiveLink href="/all-events">All Events</ActiveLink>
+          </li>
+          <li>
+            <ActiveLink href="/blogs">Blogs</ActiveLink>
+          </li>
+          <li>
+            <ActiveLink href="/contact">Contact</ActiveLink>
+          </li>
+          <li className="sm:hidden">
+            <ActiveLink href="/login">Login</ActiveLink>
+          </li>
+        </ul>
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       <nav>
